@@ -1,0 +1,82 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+:root {
+  /* Font families */
+}
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --color-blue: #007bff;
+  --color-indigo: #6610f2;
+  --color-purple: #6f42c1;
+  --color-pink: #e83e8c;
+  --color-red: #dc3545;
+  --color-orange: #fd7e14;
+  --color-yellow: #ffc107;
+  --color-green: #28a745;
+  --color-teal: #20c997;
+  --color-cyan: #17a2b8;
+  --color-white: #fff;
+  --color-gray: #6c757d;
+  --color-gray-dark: #343a40;
+
+  /* Ant Design compatible colors */
+  --color-primary: #1890ff;
+  --color-primary-hover: #40a9ff;
+  --color-primary-active: #096dd9;
+  --color-success: #52c41a;
+  --color-warning: #faad14;
+  --color-error: #f5222d;
+  --color-info: #1890ff;
+
+  /* Text colors */
+  --color-text-primary: #262626;
+  --color-text-secondary: #595959;
+  --color-text-disabled: #bfbfbf;
+
+  /* Border colors */
+  --color-border: #d9d9d9;
+  --color-border-light: #f0f0f0;
+
+  /* Background colors */
+  --color-bg: #ffffff;
+  --color-bg-secondary: #fafafa;
+
+  /* Breakpoints */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  --animate-slideInRight: slideInRight 0.3s ease-out;
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+@utility container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+:root {
+  --font-mont: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font-mont), serif;
+}
+
+button {
+  cursor: pointer;
+}
