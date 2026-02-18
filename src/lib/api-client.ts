@@ -8,6 +8,7 @@ type FetchOptions = RequestInit & {
 };
 
 const BASE_URL = env.NEXT_PUBLIC_API_URL;
+console.log('🚀 ~  ~ BASE_URL: ', BASE_URL);
 
 export const http = async <T>(
   endpoint: string,

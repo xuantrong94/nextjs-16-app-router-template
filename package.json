@@ -26,6 +26,7 @@
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "husky": "9.1.7",
+    "jest-fetch-mock": "^3.0.3",
     "lint-staged": "16.2.7",
     "lucide-react": "0.561.0",
     "next": "16.1.6",
