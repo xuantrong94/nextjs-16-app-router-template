@@ -1,4 +1,4 @@
-import { amountSchema } from './schema';
+import { amountSchema } from "./schema";
 
 const EXCHANGE_RATE = 27000;
 

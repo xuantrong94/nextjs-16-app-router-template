@@ -1,6 +1,6 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
-@import 'shadcn/tailwind.css';
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 :root {
   /* Font families */
@@ -70,7 +70,7 @@
   padding-inline: 1rem;
 }
 :root {
-  --font-mont: 'Montserrat', sans-serif;
+  --font-mont: "Montserrat", sans-serif;
 }
 
 body {

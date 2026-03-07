@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import { TriangleAlert } from 'lucide-react';
+import { useEffect } from "react";
+import { TriangleAlert } from "lucide-react";
 
 export default function Error({
   error,
@@ -11,7 +11,7 @@ export default function Error({
   reset: () => void;
 }) {
   useEffect(() => {
-    console.error('Error:', error);
+    console.error("Error:", error);
   }, [error]);
 
   return (
@@ -28,7 +28,7 @@ export default function Error({
 
         {/* Mô tả lỗi */}
         <p className='mb-6 text-gray-600'>
-          {error.message || 'Có gì đó không ổn. Vui lòng thử lại.'}
+          {error.message || "Có gì đó không ổn. Vui lòng thử lại."}
         </p>
 
         {/* Nút thử lại */}
