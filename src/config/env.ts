@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import { z } from "zod";
 
 const envSchema = z.object({
   // Client-side variables (Phải có NEXT_PUBLIC_)
@@ -7,8 +7,8 @@ const envSchema = z.object({
   // Server-side variables
   DATABASE_URL: z.string().min(1),
   NODE_ENV: z
-    .enum(['development', 'production', 'test'])
-    .default('development'),
+    .enum(["development", "production", "test"])
+    .default("development"),
 });
 
 const _env = envSchema.safeParse({
@@ -19,10 +19,10 @@ const _env = envSchema.safeParse({
 
 if (!_env.success) {
   console.error(
-    '❌ Invalid environment variables:',
+    "❌ Invalid environment variables:",
     z.treeifyError(_env.error)
   );
-  throw new Error('Invalid environment variables');
+  throw new Error("Invalid environment variables");
 }
 
 export const env = _env.data;
